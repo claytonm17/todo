@@ -1,6 +1,8 @@
 import listManager from './modules/listManager.js';
+import manipulateDOM from './modules/userInterface.js';
 
 const { toDoManager } = listManager;
+const { userInterface } = manipulateDOM;
 
 toDoManager.addNewItem('Homework', 'Chemistry reading', 'Friday', 'Medium', false);
 toDoManager.addNewItem('Meeting', 'Meet with execs', 'Monday', 'High', true);
@@ -14,3 +16,5 @@ toDoManager.changeProjectName('default');
 toDoManager.addNewItem('Play video games', 'Minecraft or fortnite', 'Today', 'Low', false);
 
 toDoManager.logList()
+
+userInterface.loadDefaultPage();
