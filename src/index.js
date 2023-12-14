@@ -1,8 +1,16 @@
 import listManager from './modules/listManager.js';
 import manipulateDOM from './modules/userInterface.js';
+import { format, parse } from 'date-fns';
 
 const { toDoManager } = listManager;
 const { userInterface } = manipulateDOM;
+
+const today = new Date();
+const formattedDate = format(today, 'yyyy-MM-dd HH:mm:ss');
+console.log(formattedDate);
+
+var result = parse('1999-09-28', 'yyyy-mm-dd', new Date())
+console.log(result)
 
 toDoManager.addNewItem('Homework', 'Chemistry reading', 'Friday', 'Medium', false);
 toDoManager.addNewItem('Meeting', 'Meet with execs', 'Monday', 'High', true);
