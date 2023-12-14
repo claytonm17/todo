@@ -1,6 +1,7 @@
 import listManager from './modules/listManager.js';
 import manipulateDOM from './modules/userInterface.js';
 import { format, parse } from 'date-fns';
+import './styles.css';
 
 const { toDoManager } = listManager;
 const { userInterface } = manipulateDOM;
