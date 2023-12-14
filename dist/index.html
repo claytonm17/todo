@@ -6,31 +6,34 @@
     <title>ToDo</title>
 </head>
 <body>
-    <!--Build basic structure for site then delete
+    <!--Build basic structure for site then delete-->
     <div class="content">
         <header class="header">
+            <img src="../src/images/main-logo.svg" alt="Logo of a list">
             <h1>To-Do</h1>
-            <img src="" alt="Logo">
         </header>
-        <nav class="navbar">
-            <div class="button-tab">
-                <button class="home-button">Home</button>
-                <button class="today-button">Today</button>
-                <button class="week-button">This week</button>
-            </div>
-            <div class="project-tab">
-                <h2>Projects</h2>
-                <button class="add-project">Add Project</button>
-            </div>
-        </nav>
-        <main class="tasks">
-            <h2 class="nav">Home</h2>
-            <div class="task-list">
+        <div class="workspace">
+            <nav class="navbar">
+                <div class="button-tab">
+                    <button class="icon-button active"><img src="../src/images/home.svg" alt="Home button icon" class="inline-icon">Home</button>
+                    <button class="icon-button"><img src="../src/images/calendar-day.svg" alt="Calendar with today icon" class="inline-icon">Today</button>
+                    <button class="icon-button"><img src="../src/images/calendar-week.svg" alt="Calendar with this week icon" class="inline-icon">This week</button>
+                </div>
+                <div class="project-tab">
+                    <h2>Projects</h2>
+                    <button class="icon-button"><img src="../src/images/list.svg" alt="Icon for a list" class="inline-icon">Main</button>
+                    <button class="icon-button"><img src="../src/images/calendar-add.svg" alt="Icon of a calendar with a plus" class="inline-icon">Add Project</button>
+                </div>
+            </nav>
+            <main class="tasks">
+                <h2 class="nav">Main</h2>
+                <div class="task-list">
 
-            </div>
-        </main>
+                </div>
+            </main>
+        </div>
     </div>
-    -END-->
+    <!--END-->
     <div id="content"></div>
     <script src="main.js"></script>
 </body>

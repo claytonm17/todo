@@ -6,10 +6,12 @@ import './styles.css';
 const { toDoManager } = listManager;
 const { userInterface } = manipulateDOM;
 
+// For displaying
 const today = new Date();
 const formattedDate = format(today, 'yyyy-MM-dd HH:mm:ss');
 console.log(formattedDate);
 
+// Use form date input to pull due date
 var result = parse('1999-09-28', 'yyyy-mm-dd', new Date())
 console.log(result)
 
@@ -26,4 +28,4 @@ toDoManager.addNewItem('Play video games', 'Minecraft or fortnite', 'Today', 'Lo
 
 toDoManager.logList()
 
-userInterface.loadDefaultPage();
+// userInterface.loadDefaultPage();

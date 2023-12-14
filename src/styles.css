@@ -3,3 +3,98 @@
     padding: 0px;
 }
 
+:root {
+    --white: #FFFFFF;
+    --cream: #FFFCF2;
+    --light-gray: #CCC5B9;
+    --dark-gray-1: #403D39;
+    --dark-gray-2: #252422;
+    --red: #EB5E28;
+    font-size: 16pt;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--dark-gray-1);
+    color: var(--cream);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--dark-gray-2);
+}
+
+header>img {
+    width: 3rem;
+    height: auto;
+}
+
+header>h1 {
+    margin-left: 1rem;
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: calc(100vh - 5rem);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+}
+
+.button-tab, .project-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button-tab>button, .project-tab>button {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+.inline-icon {
+    width: 1rem;
+    height: auto;
+}
+
+.icon-button {
+    color: var(--cream);
+    background: none;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.icon-button:hover {
+    background-color: var(--dark-gray-2);
+}
+
+.active {
+    background-color: var(--dark-gray-2);
+}
+
+.icon-button>img{
+    margin-right: 0.5rem;
+}
+
+.project-tab>h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main {
+    background-color:#CCC5B9;
+    padding: 1rem;
+}
