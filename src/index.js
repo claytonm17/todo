@@ -28,4 +28,4 @@ toDoManager.addNewItem('Play video games', 'Minecraft or fortnite', 'Today', 'Lo
 
 toDoManager.logList()
 
-// userInterface.loadDefaultPage();
+userInterface.loadDefaultPage();
