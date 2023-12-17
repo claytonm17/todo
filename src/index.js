@@ -29,3 +29,26 @@ toDoManager.addNewItem('Play video games', 'Minecraft or fortnite', 'Today', 'Lo
 toDoManager.logList()
 
 userInterface.loadDefaultPage();
+
+// Pull length of amount of tasks and pull exact data to input for DOM
+let numberOfTasks = toDoManager.pullTasks().length;
+console.log(numberOfTasks);
+// console.log(toDoManager.pullTasks())
+
+function getTaskInformation(tasks) {
+    const taskInformation = [];
+    for (let i = 0; i < tasks.length; i++) {
+        const task = tasks[i];
+        taskInformation.push({
+            title: task.title,
+            description: task.description,
+            dueDate: task.dueDate,
+            priority: task.priority,
+            isComplete: task.isComplete,
+            project: task.project
+        })
+        return taskInformation;
+    }
+}
+
+console.log(toDoManager.pullTasks()); // Get all info

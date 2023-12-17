@@ -53,11 +53,23 @@ const toDoManager = (function () {
         }
     }
 
+    // Return information to put tasks on DOM
+    function pullTasks() {
+        let mainTasks = [];
+
+        for (let i = 0; i < toDoList.length; i++) {
+            mainTasks.push(toDoList[i]);
+        }
+
+        return mainTasks;
+    }
+
     return {
         addNewItem,
         removeItem,
         logList,
         changeProjectName,
+        pullTasks,
     }
 })();
 
