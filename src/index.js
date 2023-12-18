@@ -30,6 +30,12 @@ toDoManager.logList()
 
 userInterface.loadDefaultPage();
 
+const tasks = document.querySelector('.task-list');
+
+tasks.appendChild(userInterface.taskLoader('Homework', 'Chemistry reading', 'Friday', 'Medium', false))
+tasks.appendChild(userInterface.taskLoader('Meeting', 'Meet with execs', 'Monday', 'High', true))
+tasks.appendChild(userInterface.taskLoader('Do the dishes', '', 'Today', 'Low', false))
+
 
 // Loads input form popup
 // userInterface.loadInputForm();

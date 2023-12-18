@@ -221,9 +221,47 @@ const userInterface = (function () {
         contentContainer.appendChild(inputForm());
     }
 
+    function taskLoader(title, description, dueDate, priority, isComplete) {
+        const task = document.createElement('div');
+        task.classList = 'task';
+
+            const taskTitle = document.createElement('h3');
+            taskTitle.classList = 'task-title';
+            taskTitle.textContent = title;
+
+            const taskDesc = document.createElement('div');
+            taskDesc.classList = 'description';
+            taskDesc.textContent = description;
+
+            const taskDue = document.createElement('div');
+            taskDue.classList = 'due-date';
+            taskDue.textContent = dueDate;
+
+            const taskPriority = document.createElement('div');
+            taskPriority.classList = 'priority';
+            taskPriority.textContent = priority;
+
+            const taskIsComplete = document.createElement('label');
+            taskIsComplete.for = 'isComplete';
+            taskIsComplete.textContent = 'Done?';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                taskIsComplete.appendChild(checkbox);
+
+            task.appendChild(taskTitle);
+            task.appendChild(taskDesc);
+            task.appendChild(taskDue);
+            task.appendChild(taskPriority);
+            task.appendChild(taskIsComplete);
+
+        return task
+    }
+
     return {
         loadDefaultPage,
         loadInputForm,
+        taskLoader,
     }
 })();
 
