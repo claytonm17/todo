@@ -30,6 +30,10 @@ toDoManager.logList()
 
 userInterface.loadDefaultPage();
 
+
+// Loads input form popup
+// userInterface.loadInputForm();
+
 // Pull length of amount of tasks and pull exact data to input for DOM
 let numberOfTasks = toDoManager.pullTasks().length;
 console.log(numberOfTasks);

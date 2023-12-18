@@ -6,36 +6,6 @@
     <title>ToDo</title>
 </head>
 <body>
-    <!-- Hard code entry screen -->
-        <div class="blur"></div>
-        <form action="get" class="form-box">
-            <div class="form-box-header">
-                <h2 class="form-box-title">Create a new task</h2>
-                <div class="form-box-close">X</div>
-            </div>
-            <div class="form-box-content">
-                <textarea name="new-title" id="title-new" maxlength="40" placeholder="Title: My task"></textarea>
-                <textarea name="new-description" id="description-new" placeholder="Details: e.g walk the dog" rows="4"></textarea>
-                <div class="date-box">
-                    <div class="date-title">Due Date:</div>
-                    <input name="date" type="date" />
-                </div>
-                <div class="priority-row">
-                    <div class="priority-title">Priority:</div>
-                    <label for="priority-low" class="priority-label">Low
-                        <input name="priority" type="radio" value="low" id="priority-low" class="priority-button priority-low" />
-                    </label>
-                    <label for="priority-medium" class="priority-label">Medium
-                        <input name="priority" type="radio" value="medium" id="priority-medium" class="priority-button priority-medium" />
-                    </label>
-                    <label for="priority-high" class="priority-label">High
-                        <input name="priority" type="radio" value="high" id="priority-high" class="priority-button priority-high" />
-                    </label>
-                    <input type="submit" class="form-submit" id="submit" value="add-to-list">
-                </div>
-            </div>
-        </form>
-    <!-- END -->
     <div id="content"></div>
     <script src="main.js"></script>
 </body>

@@ -172,3 +172,10 @@ textarea {
     color: var(--dark-gray-1);
     font-size: 0.9rem;
 }
+
+.date-box {
+    display: flex;
+    color: var(--dark-gray-1);
+    gap: 1rem;
+    font-size: 0.9rem;
+}
