@@ -26,9 +26,11 @@ toDoManager.addNewItem('Walk the dog', 'Be sure to bring treats!', 'Today', 'Med
 toDoManager.changeProjectName('default');
 toDoManager.addNewItem('Play video games', 'Minecraft or fortnite', 'Today', 'Low', false);
 
-toDoManager.logList()
+toDoManager.logList();
 
 userInterface.loadDefaultPage();
+
+userInterface.addIcon();
 
 const tasks = document.querySelector('.task-list');
 
@@ -38,7 +40,15 @@ tasks.appendChild(userInterface.taskLoader('Do the dishes', '', 'Today', 'Low', 
 
 
 // Loads input form popup
-// userInterface.loadInputForm();
+const addNewButton = document.querySelector('.add-new');
+addNewButton.addEventListener('click', () => {
+    userInterface.loadInputForm();
+});
+
+const closeInputWindow = document.querySelector('.form-box-close');
+addNewButton.addEventListener('click', () => {
+    
+});
 
 // Pull length of amount of tasks and pull exact data to input for DOM
 let numberOfTasks = toDoManager.pullTasks().length;

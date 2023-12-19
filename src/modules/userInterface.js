@@ -258,10 +258,27 @@ const userInterface = (function () {
         return task
     }
 
+    function addIcon(){
+
+        const contentContainer = document.querySelector('#content');
+
+        const addNew = document.createElement('button');
+        addNew.className = 'add-new';
+
+        const addNewImage = document.createElement('img');
+        addNewImage.className = 'add-new-icon';
+        addNewImage.src = '../src/images/add-task.svg';
+        addNewImage.alt = 'Add new list item icon';
+
+        addNew.appendChild(addNewImage);
+        contentContainer.appendChild(addNew);
+    }
+
     return {
         loadDefaultPage,
         loadInputForm,
         taskLoader,
+        addIcon,
     }
 })();
 
